@@ -1,9 +1,214 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Website Kue</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+<html lang="en">
+<head>
+<title>E-Groceries</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/style.css">  
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+<style>
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+  </style>
+</head>
+<body>
+  
+<!--Menu Bar-->
+<nav>
+	<div id="navbar">
+      <a style="border-top-right-radius: 5px; border-bottom-right-radius: 5px;" href="#contact">Call Us</a>
+      <a href="#ourpackage">Our Package</a>
+      <a style="border-top-left-radius: 5px;border-bottom-left-radius: 5px;" href="#home">Home</a>
+  	</div>
+</nav>
+
+
+<article class="all-browsers">
+  <h1>E-Groceries Shop Vegetables and Fruit in <br/>Indonesian</h1>
+  <p>Every Day with best ingredients</p>
+
+  <aside>
+    <!--Form Group-->
+    <div id="myDIV">
+      <div class="card-body">
+        <h3>Contact Us</h3>
+        <a style="font-size:10px; color:grey;";>Sales akan menghubungi anda 1x24 jam setelah data kami terima</a>
+        <br/>
+        <br/>
+        <form>
+          <!-- Input type text -->
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="First and Last Name" required>
+          </div>
+
+          <!-- Input type text -->
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="example@gmail.com" required>
+          </div>
+          
+          <!-- select -->
+          <div class="form-group">
+            <label for="opt">What are you interested Fruit?</label>
+            <select class="custom-select" name="opt" id="opt">
+              <option value="1">Manggo</option>
+              <option value="2">Banana</option>
+              <option value="3">Apple</option>
+              <option value="4">Papaya</option>
+              <option value="5">Snake Fruit</option>
+              <option value="6">Fruit Dragon</option>        
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" name="submit" id="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    
+  </aside>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="./img/market.jpg" style="width:40%">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="./img/market2.jpg" style="width:40%">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="./img/market3.jpg" style="width:40%">
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="./img/market4.jpg" style="width:40%">
+    </div>
+  </div>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+  <article class="browser">
+    <figure >
+      <!-- <img id="browser_img" src="./img/market.jpg" alt="" style="margin-left: auto; margin-right: auto;"> -->
+      <p id="browser_p_alt">"Setiap Hari beli buah disini manis dan fresh"</p>
+    </figure>
+    
+  </article>
+
+  <article class="table_ico">
+    <table style="width:20%">
+      <tr>
+        <th rowspan="2"><i class='fas fa-user-circle' style='font-size:40px;color:grey; margin-left: 15px;'></i></th>
+        <td class="table_ico_name">Florence Hughes</td>
+      </tr>
+      <tr>
+        <td class="table_ico_small">Ibu Rumah Tangga,28</td>
+      </tr>
+    </table>
+
+  </article>
+  
+  <article class="browser">
+    <h3>Mengapa harus berbelanja di E-Groceries, Apa manfaat yang di dapatkan dan kelebihannya :</h3>
+    <table class="table_bullet"  >
+      <tbody>
+      <tr>
+      <td><span class="numberCircle clrGrey"><span>1</span></span></td>
+      <td><a class="table_bullet_a">Harga murah dan lebih terjangkau dari toko sebelah</a></td>
+      </tr>
+
+      <tr>
+      <td><span class="numberCircle clrGrey"><span>2</span></span></td>
+      <td><a class="table_bullet_a">Sayur dan Buah Lebih Fresh</a></td>
+      </tr>
+
+      <tr>
+      <td><span class="numberCircle clrGrey"><span>3</span></span></td>
+      <td><a class="table_bullet_a">Harga murah dan lebih terjangkau dari toko sebelah</a></td>
+      </tr>
+
+      </tbody>
+    </table> 
+    <br/><br/>
+  </article>
+
+  <article class="browser3">
+    <h1 id="ourpackage" class="browser3">Our Package</h1>
+    
+    <div class="row">
+      <i class='fas fa-seedling' style='font-size:40px;color:green; margin-right: 15px;'></i>
+      <div class="col3">
+       
+        <h5>Fresh Vegetable</h5>
+        <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+      </div>
+      <i class='fas fa-apple-alt' style='font-size:40px;color:red; margin-right: 15px;'></i>
+      <div class="col3">
+        
+        <h5>Fresh Fruit</h5>
+        <p>Buah dengan kualitas terbaik dari local atau import dan harga yang menarik</p>
+      </div>
+      <i class='fas fa-box' style='font-size:40px;color:brown; margin-right: 15px;'></i>
+      <div class="col3">
+        <h5>Instant Delivery</h5>
+        <p>Dikirim instan oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja kamu</p>
+      </div>
+    </div>  
+
+    <div class="row">
+      <i class='fas fa-tools' style='font-size:40px;color:green; margin-right: 15px;'></i>
+      <div class="col3">
+        <h5>Kitchen Ingredient</h5>
+        <p>Memiliki dapur yang bersih dan rapi</p>
+      </div>
+      <i class='fas fa-gifts' style='font-size:40px;color:red; margin-right: 15px;'></i>
+      <div class="col3">
+        
+        <h5>Kitchen Set</h5>
+        <p>Memiliki perlatan dapur yang lengkap</p>
+      </div>
+      <i class='fas fa-toolbox' style='font-size:40px;color:brown; margin-right: 15px;'></i>
+      <div class="col3">
+        <h5>Bundling Set</h5>
+        <p>Memiliki paket penjualan yang lengkap dan aneka buah yang lengkap</p>
+      </div>
+    </div>  
+  </article>
+
+  <article class="browser4">
+    <h3 id="contact">Lets Go Order Now !!!, </h3>
+    <p style="text-align: center; background-color: azure; ">We Have Discount & Big Promotion, Dont miss it <br> Contact Us : 021-77777-666-51 <br>Email Us : egroceries_market@gmail.co.id</p>
+  </article>
+
+
+</article>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<footer>
+  <i class="fa fa-copyright"></i><a> By Team Unyu Unyu</a>
+ </footer>
+
+<script src="./script/script.js"></script>
+
+</body>
 </html>
+    
